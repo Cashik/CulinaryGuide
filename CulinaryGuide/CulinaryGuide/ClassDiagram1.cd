@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CulinaryGuide.DishClass">
+    <Position X="1.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAABIAAAAAAAEAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>DishClass.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="ingredients" />
+      <Field Name="classes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CulinaryGuide.IngredientClass">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAIAAAAAAAAAAAADAAAAAAAAAAAgA=</HashCode>
+      <FileName>IngredientClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CulinaryGuide.SearchData">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAIAAAAAACEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SearchData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="reqProducts" />
+      <Field Name="reqSubclasses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CulinaryGuide.SettingsClass">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAgACAAAAAAAAAAAACAAAAgAAEIA=</HashCode>
+      <FileName>SettingsClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CulinaryGuide.SimpleTableClass">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>SimpleTableClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CulinaryGuide.SubcategoryClass">
+    <Position X="3.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>SubcategoryClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CulinaryGuide.UserClass">
+    <Position X="8" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAMAAEAAAAAAAAAgAAEgA=</HashCode>
+      <FileName>UserClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CulinaryGuide.MainForm">
+    <Position X="0.75" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="addBookmarkBtn" Hidden="true" />
+      <Field Name="addDishBtn" Hidden="true" />
+      <Field Name="addIngToDSBtn" Hidden="true" />
+      <Field Name="addSubclassToDSBtn" Hidden="true" />
+      <Field Name="backToAllDishes" Hidden="true" />
+      <Field Name="bookmarkBtn" Hidden="true" />
+      <Field Name="button1" Hidden="true" />
+      <Field Name="button10" Hidden="true" />
+      <Field Name="button11" Hidden="true" />
+      <Field Name="button2" Hidden="true" />
+      <Field Name="button21" Hidden="true" />
+      <Field Name="button9" Hidden="true" />
+      <Field Name="classDSCB" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="defaultSearchBtn" Hidden="true" />
+      <Field Name="defaultSearchTP" Hidden="true" />
+      <Field Name="dishesTP" Hidden="true" />
+      <Field Name="dishTP" Hidden="true" />
+      <Field Name="editAddIngBtn" Hidden="true" />
+      <Field Name="editAddPhotoBtn" Hidden="true" />
+      <Field Name="editAddSubclassesBtn" Hidden="true" />
+      <Field Name="editAddSubclassLBUC" Hidden="true" />
+      <Field Name="editDescriptionUC" Hidden="true" />
+      <Field Name="editDishBtn" Hidden="true" />
+      <Field Name="editDishNameTB" Hidden="true" />
+      <Field Name="editDishTP" Hidden="true" />
+      <Field Name="editIngFLP" Hidden="true" />
+      <Field Name="editProductCB" Hidden="true" />
+      <Field Name="editResultPhotoPB" Hidden="true" />
+      <Field Name="editSelectClassCB" Hidden="true" />
+      <Field Name="editSubclassFLP" Hidden="true" />
+      <Field Name="editValueTB" Hidden="true" />
+      <Field Name="exitBtn" Hidden="true" />
+      <Field Name="fastSearchBtn" Hidden="true" />
+      <Field Name="fastSearchTP" Hidden="true" />
+      <Field Name="helpBtn" Hidden="true" />
+      <Field Name="helpTP" Hidden="true" />
+      <Field Name="ingredientsDSFLP" Hidden="true" />
+      <Field Name="ItemsFLP" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label10" Hidden="true" />
+      <Field Name="label11" Hidden="true" />
+      <Field Name="label12" Hidden="true" />
+      <Field Name="label13" Hidden="true" />
+      <Field Name="label15" Hidden="true" />
+      <Field Name="label16" Hidden="true" />
+      <Field Name="label18" Hidden="true" />
+      <Field Name="label19" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label20" Hidden="true" />
+      <Field Name="label21" Hidden="true" />
+      <Field Name="label22" Hidden="true" />
+      <Field Name="label23" Hidden="true" />
+      <Field Name="label24" Hidden="true" />
+      <Field Name="label27" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label8" Hidden="true" />
+      <Field Name="label9" Hidden="true" />
+      <Field Name="loginBtn" Hidden="true" />
+      <Field Name="logoutBtn" Hidden="true" />
+      <Field Name="mainTC" Hidden="true" />
+      <Field Name="pane" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel10" Hidden="true" />
+      <Field Name="panel11" Hidden="true" />
+      <Field Name="panel12" Hidden="true" />
+      <Field Name="panel13" Hidden="true" />
+      <Field Name="panel14" Hidden="true" />
+      <Field Name="panel15" Hidden="true" />
+      <Field Name="panel16" Hidden="true" />
+      <Field Name="panel17" Hidden="true" />
+      <Field Name="panel18" Hidden="true" />
+      <Field Name="panel19" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+      <Field Name="panel20" Hidden="true" />
+      <Field Name="panel21" Hidden="true" />
+      <Field Name="panel23" Hidden="true" />
+      <Field Name="panel24" Hidden="true" />
+      <Field Name="panel25" Hidden="true" />
+      <Field Name="panel27" Hidden="true" />
+      <Field Name="panel28" Hidden="true" />
+      <Field Name="panel29" Hidden="true" />
+      <Field Name="panel3" Hidden="true" />
+      <Field Name="panel30" Hidden="true" />
+      <Field Name="panel31" Hidden="true" />
+      <Field Name="panel32" Hidden="true" />
+      <Field Name="panel33" Hidden="true" />
+      <Field Name="panel34" Hidden="true" />
+      <Field Name="panel36" Hidden="true" />
+      <Field Name="panel37" Hidden="true" />
+      <Field Name="panel38" Hidden="true" />
+      <Field Name="panel4" Hidden="true" />
+      <Field Name="panel5" Hidden="true" />
+      <Field Name="panel6" Hidden="true" />
+      <Field Name="panel7" Hidden="true" />
+      <Field Name="panel8" Hidden="true" />
+      <Field Name="panel9" Hidden="true" />
+      <Field Name="productDSCB" Hidden="true" />
+      <Field Name="removeBookmarkBtn" Hidden="true" />
+      <Field Name="removeDishBtn" Hidden="true" />
+      <Field Name="saveDishBtn" Hidden="true" />
+      <Field Name="searchTC" Hidden="true" />
+      <Field Name="settingsBtn" Hidden="true" />
+      <Field Name="showDiscriptionUC" Hidden="true" />
+      <Field Name="showDishImgPB" Hidden="true" />
+      <Field Name="showIngFLP" Hidden="true" />
+      <Field Name="showNameLbl" Hidden="true" />
+      <Field Name="showSubclassFLP" Hidden="true" />
+      <Field Name="startSearchBtn" Hidden="true" />
+      <Field Name="subclassDSFLP" Hidden="true" />
+      <Field Name="subclassDSUC" Hidden="true" />
+      <Field Name="toolTip1" Hidden="true" />
+      <Field Name="userNameLbl" Hidden="true" />
+      <Field Name="wordDSTB" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="classes" Type="CulinaryGuide.DishCategoryClass" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="2.815" />
+        <Point X="3.375" Y="2.815" />
+        <Point X="3.375" Y="4.062" />
+        <Point X="3.75" Y="4.062" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="minDishList" Type="CulinaryGuide.DishClass" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.75" Y="2.812" />
+        <Point X="0.576" Y="2.812" />
+        <Point X="0.576" Y="6.813" />
+        <Point X="1.5" Y="6.813" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="dish" Type="CulinaryGuide.DishClass" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.75" Y="2.25" />
+        <Point X="0.304" Y="2.25" />
+        <Point X="0.304" Y="8.062" />
+        <Point X="1.5" Y="8.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>/7SdAIwDlCK4AhVDFoGQHgIjc1y/ggRBAUshhUj/a7o=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="settings" />
+      <Field Name="user" />
+      <Field Name="dish" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="classes" />
+      <Field Name="minDishList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CulinaryGuide.LoginForm" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="button1" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="loginBtn" Hidden="true" />
+      <Method Name="loginBtn_Click" Hidden="true" />
+      <Method Name="LoginForm" Hidden="true" />
+      <Field Name="loginTxt" Hidden="true" />
+      <Field Name="passwordTxt" Hidden="true" />
+      <Field Name="registrationBtn" Hidden="true" />
+      <Method Name="registrationBtn_Click" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGEAABAAAACAAAASYAwIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoginForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="main_form" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CulinaryGuide.RegisterForm" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGEAABBAAACAAAASAAgABAAAAAQAAAAAAAA=</HashCode>
+      <FileName>RegisterForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="parent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CulinaryGuide.DishCategoryClass">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <AssociationLine Name="subCategoryElements" Type="CulinaryGuide.SimpleTableClass" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="3.969" />
+        <Point X="5.625" Y="3.969" />
+        <Point X="5.625" Y="9.687" />
+        <Point X="6.5" Y="9.687" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAQAgA=</HashCode>
+      <FileName>DishCategoryClass.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="subCategoryElements" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
