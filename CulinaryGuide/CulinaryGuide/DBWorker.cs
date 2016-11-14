@@ -152,7 +152,8 @@ namespace CulinaryGuide
             else
                 return null;
         }
-        private List<SubcategoryClass> GetDishCatigoriesByDishId(int id)
+
+        /*private List<SubcategoryClass> GetDishCatigoriesByDishId(int id)
         {
             List<SubcategoryClass> b = new List<SubcategoryClass>();
             List<int> subCategoriesId = new List<int>();
@@ -205,9 +206,42 @@ namespace CulinaryGuide
                 return b;
             else
                 return null;
+        }*/
+        private List<SubcategoryClass> GetDishCatigoriesByDishId(int id)
+        {
+            List<SubcategoryClass> b = new List<SubcategoryClass>();
+            List<int> subCategoriesId = new List<int>();
+            string command = string.Format("SELECT * FROM [Subclass] where Id in(SELECT Subclass_id FROM [Linker] where Dish_id = '{0}')", id);
+            bool allFine = false;
+            try
+            {
+                SqlCommand cmd = new SqlCommand(command, connection);
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    SubcategoryClass buf = new SubcategoryClass();
+
+                    buf.id = (int)dr[dr.GetOrdinal("Id")];
+                    buf.name = (string)dr[dr.GetOrdinal("Name")];
+                    buf.parent_id = (int)dr[dr.GetOrdinal("Parent_id")];
+
+                    b.Add(buf);
+                }
+                allFine = true;
+                dr.Close();
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Ошибка подключения к базе!");
+            }
+
+            if (allFine)
+                return b;
+            else
+                return null;
         }
 
-        
+
 
 
         // возвращает все блюда только для заполнения минимизированной формы

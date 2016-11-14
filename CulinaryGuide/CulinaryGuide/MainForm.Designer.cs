@@ -40,6 +40,7 @@
             this.wordDSTB = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
+            this.subclassDSUC = new CulinaryGuide.DishClassLBUC();
             this.label21 = new System.Windows.Forms.Label();
             this.addSubclassToDSBtn = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
+            this.showDiscriptionUC = new CulinaryGuide.RTBUC();
             this.panel33 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -113,6 +115,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
+            this.editDescriptionUC = new CulinaryGuide.RTBUC();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -124,6 +127,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.editIngFLP = new System.Windows.Forms.FlowLayoutPanel();
             this.panel16 = new System.Windows.Forms.Panel();
+            this.editAddSubclassLBUC = new CulinaryGuide.DishClassLBUC();
             this.label11 = new System.Windows.Forms.Label();
             this.editSubclassFLP = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
@@ -137,10 +141,6 @@
             this.saveDishBtn = new System.Windows.Forms.Button();
             this.helpTP = new System.Windows.Forms.TabPage();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.subclassDSUC = new CulinaryGuide.DishClassLBUC();
-            this.showDiscriptionUC = new CulinaryGuide.RTBUC();
-            this.editDescriptionUC = new CulinaryGuide.RTBUC();
-            this.editAddSubclassLBUC = new CulinaryGuide.DishClassLBUC();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.searchTC.SuspendLayout();
@@ -303,6 +303,18 @@
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(200, 218);
             this.panel31.TabIndex = 17;
+            // 
+            // subclassDSUC
+            // 
+            this.subclassDSUC.AutoScroll = true;
+            this.subclassDSUC.AutoSize = true;
+            this.subclassDSUC.BackColor = System.Drawing.Color.LightGreen;
+            this.subclassDSUC.Location = new System.Drawing.Point(8, 94);
+            this.subclassDSUC.Margin = new System.Windows.Forms.Padding(0);
+            this.subclassDSUC.MaximumSize = new System.Drawing.Size(164, 155);
+            this.subclassDSUC.Name = "subclassDSUC";
+            this.subclassDSUC.Size = new System.Drawing.Size(164, 93);
+            this.subclassDSUC.TabIndex = 27;
             // 
             // label21
             // 
@@ -772,10 +784,10 @@
             this.mainTC.Controls.Add(this.dishTP);
             this.mainTC.Controls.Add(this.editDishTP);
             this.mainTC.Controls.Add(this.helpTP);
-            this.mainTC.Location = new System.Drawing.Point(-4, -30);
+            this.mainTC.Location = new System.Drawing.Point(-4, -1);
             this.mainTC.Name = "mainTC";
             this.mainTC.SelectedIndex = 0;
-            this.mainTC.Size = new System.Drawing.Size(477, 481);
+            this.mainTC.Size = new System.Drawing.Size(477, 452);
             this.mainTC.TabIndex = 2;
             // 
             // dishesTP
@@ -784,7 +796,7 @@
             this.dishesTP.Location = new System.Drawing.Point(4, 22);
             this.dishesTP.Name = "dishesTP";
             this.dishesTP.Padding = new System.Windows.Forms.Padding(3);
-            this.dishesTP.Size = new System.Drawing.Size(469, 455);
+            this.dishesTP.Size = new System.Drawing.Size(469, 426);
             this.dishesTP.TabIndex = 0;
             this.dishesTP.Text = "tabPage2";
             this.dishesTP.UseVisualStyleBackColor = true;
@@ -798,7 +810,7 @@
             this.ItemsFLP.Location = new System.Drawing.Point(9, 17);
             this.ItemsFLP.Margin = new System.Windows.Forms.Padding(10);
             this.ItemsFLP.Name = "ItemsFLP";
-            this.ItemsFLP.Size = new System.Drawing.Size(450, 428);
+            this.ItemsFLP.Size = new System.Drawing.Size(450, 399);
             this.ItemsFLP.TabIndex = 3;
             // 
             // dishTP
@@ -811,7 +823,7 @@
             this.dishTP.Location = new System.Drawing.Point(4, 22);
             this.dishTP.Name = "dishTP";
             this.dishTP.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.dishTP.Size = new System.Drawing.Size(469, 455);
+            this.dishTP.Size = new System.Drawing.Size(469, 426);
             this.dishTP.TabIndex = 1;
             this.dishTP.Text = "tabPage3";
             // 
@@ -910,6 +922,16 @@
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(420, 20);
             this.panel32.TabIndex = 2;
+            // 
+            // showDiscriptionUC
+            // 
+            this.showDiscriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.showDiscriptionUC.BackColor = System.Drawing.Color.White;
+            this.showDiscriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.showDiscriptionUC.Location = new System.Drawing.Point(0, 0);
+            this.showDiscriptionUC.Name = "showDiscriptionUC";
+            this.showDiscriptionUC.Size = new System.Drawing.Size(420, 20);
+            this.showDiscriptionUC.TabIndex = 0;
             // 
             // panel33
             // 
@@ -1169,7 +1191,7 @@
             this.panel11.Controls.Add(this.button9);
             this.panel11.Controls.Add(this.button2);
             this.panel11.Controls.Add(this.button1);
-            this.panel11.Location = new System.Drawing.Point(-343, 4410);
+            this.panel11.Location = new System.Drawing.Point(-360, 4462);
             this.panel11.MinimumSize = new System.Drawing.Size(2, 42);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(252, 42);
@@ -1285,7 +1307,7 @@
             this.editDishTP.Controls.Add(this.panel15);
             this.editDishTP.Location = new System.Drawing.Point(4, 22);
             this.editDishTP.Name = "editDishTP";
-            this.editDishTP.Size = new System.Drawing.Size(469, 455);
+            this.editDishTP.Size = new System.Drawing.Size(469, 426);
             this.editDishTP.TabIndex = 0;
             this.editDishTP.Text = "tabPage4";
             // 
@@ -1405,6 +1427,15 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(419, 20);
             this.panel28.TabIndex = 2;
+            // 
+            // editDescriptionUC
+            // 
+            this.editDescriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.editDescriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editDescriptionUC.Location = new System.Drawing.Point(0, 0);
+            this.editDescriptionUC.Name = "editDescriptionUC";
+            this.editDescriptionUC.Size = new System.Drawing.Size(419, 20);
+            this.editDescriptionUC.TabIndex = 0;
             // 
             // panel20
             // 
@@ -1545,6 +1576,18 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(452, 150);
             this.panel16.TabIndex = 5;
+            // 
+            // editAddSubclassLBUC
+            // 
+            this.editAddSubclassLBUC.AutoScroll = true;
+            this.editAddSubclassLBUC.AutoSize = true;
+            this.editAddSubclassLBUC.BackColor = System.Drawing.Color.LightGreen;
+            this.editAddSubclassLBUC.Location = new System.Drawing.Point(188, 23);
+            this.editAddSubclassLBUC.Margin = new System.Windows.Forms.Padding(0);
+            this.editAddSubclassLBUC.MaximumSize = new System.Drawing.Size(200, 155);
+            this.editAddSubclassLBUC.Name = "editAddSubclassLBUC";
+            this.editAddSubclassLBUC.Size = new System.Drawing.Size(200, 84);
+            this.editAddSubclassLBUC.TabIndex = 28;
             // 
             // label11
             // 
@@ -1699,53 +1742,10 @@
             // 
             this.helpTP.Location = new System.Drawing.Point(4, 22);
             this.helpTP.Name = "helpTP";
-            this.helpTP.Size = new System.Drawing.Size(469, 455);
+            this.helpTP.Size = new System.Drawing.Size(469, 426);
             this.helpTP.TabIndex = 2;
             this.helpTP.Text = "tabPage1";
             this.helpTP.UseVisualStyleBackColor = true;
-            // 
-            // subclassDSUC
-            // 
-            this.subclassDSUC.AutoScroll = true;
-            this.subclassDSUC.AutoSize = true;
-            this.subclassDSUC.BackColor = System.Drawing.Color.LightGreen;
-            this.subclassDSUC.Location = new System.Drawing.Point(8, 94);
-            this.subclassDSUC.Margin = new System.Windows.Forms.Padding(0);
-            this.subclassDSUC.MaximumSize = new System.Drawing.Size(164, 155);
-            this.subclassDSUC.Name = "subclassDSUC";
-            this.subclassDSUC.Size = new System.Drawing.Size(164, 93);
-            this.subclassDSUC.TabIndex = 27;
-            // 
-            // showDiscriptionUC
-            // 
-            this.showDiscriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.showDiscriptionUC.BackColor = System.Drawing.Color.White;
-            this.showDiscriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.showDiscriptionUC.Location = new System.Drawing.Point(0, 0);
-            this.showDiscriptionUC.Name = "showDiscriptionUC";
-            this.showDiscriptionUC.Size = new System.Drawing.Size(420, 20);
-            this.showDiscriptionUC.TabIndex = 0;
-            // 
-            // editDescriptionUC
-            // 
-            this.editDescriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.editDescriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.editDescriptionUC.Location = new System.Drawing.Point(0, 0);
-            this.editDescriptionUC.Name = "editDescriptionUC";
-            this.editDescriptionUC.Size = new System.Drawing.Size(419, 20);
-            this.editDescriptionUC.TabIndex = 0;
-            // 
-            // editAddSubclassLBUC
-            // 
-            this.editAddSubclassLBUC.AutoScroll = true;
-            this.editAddSubclassLBUC.AutoSize = true;
-            this.editAddSubclassLBUC.BackColor = System.Drawing.Color.LightGreen;
-            this.editAddSubclassLBUC.Location = new System.Drawing.Point(188, 23);
-            this.editAddSubclassLBUC.Margin = new System.Windows.Forms.Padding(0);
-            this.editAddSubclassLBUC.MaximumSize = new System.Drawing.Size(200, 155);
-            this.editAddSubclassLBUC.Name = "editAddSubclassLBUC";
-            this.editAddSubclassLBUC.Size = new System.Drawing.Size(200, 84);
-            this.editAddSubclassLBUC.TabIndex = 28;
             // 
             // MainForm
             // 
