@@ -40,7 +40,6 @@
             this.wordDSTB = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.subclassDSUC = new CulinaryGuide.DishClassLBUC();
             this.label21 = new System.Windows.Forms.Label();
             this.addSubclassToDSBtn = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
@@ -69,6 +68,7 @@
             this.helpBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.addDishBtn = new System.Windows.Forms.Button();
+            this.showRecommendsBtn = new System.Windows.Forms.Button();
             this.bookmarkBtn = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.mainTC = new System.Windows.Forms.TabControl();
@@ -82,7 +82,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.showDiscriptionUC = new CulinaryGuide.RTBUC();
             this.panel33 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -100,11 +99,6 @@
             this.editDishBtn = new System.Windows.Forms.Button();
             this.removeDishBtn = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.editDishTP = new System.Windows.Forms.TabPage();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -115,7 +109,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.editDescriptionUC = new CulinaryGuide.RTBUC();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -127,7 +120,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.editIngFLP = new System.Windows.Forms.FlowLayoutPanel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.editAddSubclassLBUC = new CulinaryGuide.DishClassLBUC();
             this.label11 = new System.Windows.Forms.Label();
             this.editSubclassFLP = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
@@ -141,6 +133,10 @@
             this.saveDishBtn = new System.Windows.Forms.Button();
             this.helpTP = new System.Windows.Forms.TabPage();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.subclassDSUC = new CulinaryGuide.DishClassLBUC();
+            this.showDiscriptionUC = new CulinaryGuide.RTBUC();
+            this.editDescriptionUC = new CulinaryGuide.RTBUC();
+            this.editAddSubclassLBUC = new CulinaryGuide.DishClassLBUC();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.searchTC.SuspendLayout();
@@ -170,7 +166,6 @@
             this.panel36.SuspendLayout();
             this.panel37.SuspendLayout();
             this.panel14.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.editDishTP.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -303,18 +298,6 @@
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(200, 218);
             this.panel31.TabIndex = 17;
-            // 
-            // subclassDSUC
-            // 
-            this.subclassDSUC.AutoScroll = true;
-            this.subclassDSUC.AutoSize = true;
-            this.subclassDSUC.BackColor = System.Drawing.Color.LightGreen;
-            this.subclassDSUC.Location = new System.Drawing.Point(8, 94);
-            this.subclassDSUC.Margin = new System.Windows.Forms.Padding(0);
-            this.subclassDSUC.MaximumSize = new System.Drawing.Size(164, 155);
-            this.subclassDSUC.Name = "subclassDSUC";
-            this.subclassDSUC.Size = new System.Drawing.Size(164, 93);
-            this.subclassDSUC.TabIndex = 27;
             // 
             // label21
             // 
@@ -586,10 +569,11 @@
             this.exitBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumAquamarine;
             this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBtn.Image = ((System.Drawing.Image)(resources.GetObject("exitBtn.Image")));
-            this.exitBtn.Location = new System.Drawing.Point(418, 0);
+            this.exitBtn.Location = new System.Drawing.Point(423, 0);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(0);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Padding = new System.Windows.Forms.Padding(5);
-            this.exitBtn.Size = new System.Drawing.Size(50, 40);
+            this.exitBtn.Size = new System.Drawing.Size(45, 40);
             this.exitBtn.TabIndex = 7;
             this.exitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip1.SetToolTip(this.exitBtn, "Закрыть окно");
@@ -671,10 +655,11 @@
             this.settingsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumAquamarine;
             this.settingsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsBtn.Image = ((System.Drawing.Image)(resources.GetObject("settingsBtn.Image")));
-            this.settingsBtn.Location = new System.Drawing.Point(368, 0);
+            this.settingsBtn.Location = new System.Drawing.Point(378, 0);
+            this.settingsBtn.Margin = new System.Windows.Forms.Padding(0);
             this.settingsBtn.Name = "settingsBtn";
             this.settingsBtn.Padding = new System.Windows.Forms.Padding(5);
-            this.settingsBtn.Size = new System.Drawing.Size(50, 40);
+            this.settingsBtn.Size = new System.Drawing.Size(45, 40);
             this.settingsBtn.TabIndex = 11;
             this.settingsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip1.SetToolTip(this.settingsBtn, "Настройки приложения");
@@ -691,10 +676,11 @@
             this.helpBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumAquamarine;
             this.helpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpBtn.Image = ((System.Drawing.Image)(resources.GetObject("helpBtn.Image")));
-            this.helpBtn.Location = new System.Drawing.Point(318, 0);
+            this.helpBtn.Location = new System.Drawing.Point(333, 0);
+            this.helpBtn.Margin = new System.Windows.Forms.Padding(0);
             this.helpBtn.Name = "helpBtn";
             this.helpBtn.Padding = new System.Windows.Forms.Padding(5);
-            this.helpBtn.Size = new System.Drawing.Size(50, 40);
+            this.helpBtn.Size = new System.Drawing.Size(45, 40);
             this.helpBtn.TabIndex = 12;
             this.helpBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip1.SetToolTip(this.helpBtn, "Вызов подробной справки");
@@ -706,6 +692,7 @@
             this.panel2.BackColor = System.Drawing.Color.LightGreen;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.addDishBtn);
+            this.panel2.Controls.Add(this.showRecommendsBtn);
             this.panel2.Controls.Add(this.bookmarkBtn);
             this.panel2.Controls.Add(this.helpBtn);
             this.panel2.Controls.Add(this.settingsBtn);
@@ -732,15 +719,37 @@
             this.addDishBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumAquamarine;
             this.addDishBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addDishBtn.Image = ((System.Drawing.Image)(resources.GetObject("addDishBtn.Image")));
-            this.addDishBtn.Location = new System.Drawing.Point(218, 0);
+            this.addDishBtn.Location = new System.Drawing.Point(198, 0);
+            this.addDishBtn.Margin = new System.Windows.Forms.Padding(0);
             this.addDishBtn.Name = "addDishBtn";
             this.addDishBtn.Padding = new System.Windows.Forms.Padding(5);
-            this.addDishBtn.Size = new System.Drawing.Size(50, 40);
-            this.addDishBtn.TabIndex = 14;
+            this.addDishBtn.Size = new System.Drawing.Size(45, 40);
+            this.addDishBtn.TabIndex = 15;
             this.addDishBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip1.SetToolTip(this.addDishBtn, "Добавить рецепт");
             this.addDishBtn.UseVisualStyleBackColor = true;
             this.addDishBtn.Click += new System.EventHandler(this.addDishBtn_Click);
+            // 
+            // showRecommendsBtn
+            // 
+            this.showRecommendsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.showRecommendsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showRecommendsBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.showRecommendsBtn.FlatAppearance.BorderSize = 0;
+            this.showRecommendsBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightYellow;
+            this.showRecommendsBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumAquamarine;
+            this.showRecommendsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showRecommendsBtn.Image = ((System.Drawing.Image)(resources.GetObject("showRecommendsBtn.Image")));
+            this.showRecommendsBtn.Location = new System.Drawing.Point(243, 0);
+            this.showRecommendsBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.showRecommendsBtn.Name = "showRecommendsBtn";
+            this.showRecommendsBtn.Padding = new System.Windows.Forms.Padding(5);
+            this.showRecommendsBtn.Size = new System.Drawing.Size(45, 40);
+            this.showRecommendsBtn.TabIndex = 14;
+            this.showRecommendsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.showRecommendsBtn, "Рекомендации");
+            this.showRecommendsBtn.UseVisualStyleBackColor = true;
+            this.showRecommendsBtn.Click += new System.EventHandler(this.showRecommendsBtn_Click);
             // 
             // bookmarkBtn
             // 
@@ -752,10 +761,11 @@
             this.bookmarkBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumAquamarine;
             this.bookmarkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bookmarkBtn.Image = ((System.Drawing.Image)(resources.GetObject("bookmarkBtn.Image")));
-            this.bookmarkBtn.Location = new System.Drawing.Point(268, 0);
+            this.bookmarkBtn.Location = new System.Drawing.Point(288, 0);
+            this.bookmarkBtn.Margin = new System.Windows.Forms.Padding(0);
             this.bookmarkBtn.Name = "bookmarkBtn";
             this.bookmarkBtn.Padding = new System.Windows.Forms.Padding(5);
-            this.bookmarkBtn.Size = new System.Drawing.Size(50, 40);
+            this.bookmarkBtn.Size = new System.Drawing.Size(45, 40);
             this.bookmarkBtn.TabIndex = 13;
             this.bookmarkBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip1.SetToolTip(this.bookmarkBtn, "Просмотр закладок");
@@ -798,7 +808,7 @@
             this.dishesTP.Padding = new System.Windows.Forms.Padding(3);
             this.dishesTP.Size = new System.Drawing.Size(469, 426);
             this.dishesTP.TabIndex = 0;
-            this.dishesTP.Text = "tabPage2";
+            this.dishesTP.Text = "Dish list";
             this.dishesTP.UseVisualStyleBackColor = true;
             // 
             // ItemsFLP
@@ -825,7 +835,7 @@
             this.dishTP.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.dishTP.Size = new System.Drawing.Size(469, 426);
             this.dishTP.TabIndex = 1;
-            this.dishTP.Text = "tabPage3";
+            this.dishTP.Text = "Dish detail";
             // 
             // panel12
             // 
@@ -870,6 +880,7 @@
             this.showDishImgPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.showDishImgPB.TabIndex = 2;
             this.showDishImgPB.TabStop = false;
+            this.showDishImgPB.Click += new System.EventHandler(this.showDishImgPB_Click);
             // 
             // panel24
             // 
@@ -922,16 +933,6 @@
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(420, 20);
             this.panel32.TabIndex = 2;
-            // 
-            // showDiscriptionUC
-            // 
-            this.showDiscriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.showDiscriptionUC.BackColor = System.Drawing.Color.White;
-            this.showDiscriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.showDiscriptionUC.Location = new System.Drawing.Point(0, 0);
-            this.showDiscriptionUC.Name = "showDiscriptionUC";
-            this.showDiscriptionUC.Size = new System.Drawing.Size(420, 20);
-            this.showDiscriptionUC.TabIndex = 0;
             // 
             // panel33
             // 
@@ -1186,109 +1187,11 @@
             this.panel11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.button11);
-            this.panel11.Controls.Add(this.button10);
-            this.panel11.Controls.Add(this.button9);
-            this.panel11.Controls.Add(this.button2);
-            this.panel11.Controls.Add(this.button1);
-            this.panel11.Location = new System.Drawing.Point(-360, 4462);
+            this.panel11.Location = new System.Drawing.Point(-178, 5456);
             this.panel11.MinimumSize = new System.Drawing.Size(2, 42);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(252, 42);
+            this.panel11.Size = new System.Drawing.Size(2, 42);
             this.panel11.TabIndex = 0;
-            // 
-            // button11
-            // 
-            this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightYellow;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.MinimumSize = new System.Drawing.Size(0, 42);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(5);
-            this.button11.Size = new System.Drawing.Size(50, 42);
-            this.button11.TabIndex = 17;
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightYellow;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(50, 0);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(5);
-            this.button10.Size = new System.Drawing.Size(50, 40);
-            this.button10.TabIndex = 16;
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Visible = false;
-            // 
-            // button9
-            // 
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightYellow;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(100, 0);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(5);
-            this.button9.Size = new System.Drawing.Size(50, 40);
-            this.button9.TabIndex = 15;
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightYellow;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(150, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(5);
-            this.button2.Size = new System.Drawing.Size(50, 40);
-            this.button2.TabIndex = 14;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightYellow;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(200, 0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(5);
-            this.button1.Size = new System.Drawing.Size(50, 40);
-            this.button1.TabIndex = 13;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel10
             // 
@@ -1309,7 +1212,7 @@
             this.editDishTP.Name = "editDishTP";
             this.editDishTP.Size = new System.Drawing.Size(469, 426);
             this.editDishTP.TabIndex = 0;
-            this.editDishTP.Text = "tabPage4";
+            this.editDishTP.Text = "Edit dish";
             // 
             // panel15
             // 
@@ -1376,6 +1279,7 @@
             this.editResultPhotoPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.editResultPhotoPB.TabIndex = 2;
             this.editResultPhotoPB.TabStop = false;
+            this.editResultPhotoPB.Click += new System.EventHandler(this.editResultPhotoPB_Click);
             // 
             // panel18
             // 
@@ -1427,15 +1331,6 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(419, 20);
             this.panel28.TabIndex = 2;
-            // 
-            // editDescriptionUC
-            // 
-            this.editDescriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.editDescriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.editDescriptionUC.Location = new System.Drawing.Point(0, 0);
-            this.editDescriptionUC.Name = "editDescriptionUC";
-            this.editDescriptionUC.Size = new System.Drawing.Size(419, 20);
-            this.editDescriptionUC.TabIndex = 0;
             // 
             // panel20
             // 
@@ -1576,18 +1471,6 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(452, 150);
             this.panel16.TabIndex = 5;
-            // 
-            // editAddSubclassLBUC
-            // 
-            this.editAddSubclassLBUC.AutoScroll = true;
-            this.editAddSubclassLBUC.AutoSize = true;
-            this.editAddSubclassLBUC.BackColor = System.Drawing.Color.LightGreen;
-            this.editAddSubclassLBUC.Location = new System.Drawing.Point(188, 23);
-            this.editAddSubclassLBUC.Margin = new System.Windows.Forms.Padding(0);
-            this.editAddSubclassLBUC.MaximumSize = new System.Drawing.Size(200, 155);
-            this.editAddSubclassLBUC.Name = "editAddSubclassLBUC";
-            this.editAddSubclassLBUC.Size = new System.Drawing.Size(200, 84);
-            this.editAddSubclassLBUC.TabIndex = 28;
             // 
             // label11
             // 
@@ -1744,8 +1627,51 @@
             this.helpTP.Name = "helpTP";
             this.helpTP.Size = new System.Drawing.Size(469, 426);
             this.helpTP.TabIndex = 2;
-            this.helpTP.Text = "tabPage1";
+            this.helpTP.Text = "Help";
             this.helpTP.UseVisualStyleBackColor = true;
+            // 
+            // subclassDSUC
+            // 
+            this.subclassDSUC.AutoScroll = true;
+            this.subclassDSUC.AutoSize = true;
+            this.subclassDSUC.BackColor = System.Drawing.Color.LightGreen;
+            this.subclassDSUC.Location = new System.Drawing.Point(8, 94);
+            this.subclassDSUC.Margin = new System.Windows.Forms.Padding(0);
+            this.subclassDSUC.MaximumSize = new System.Drawing.Size(164, 155);
+            this.subclassDSUC.Name = "subclassDSUC";
+            this.subclassDSUC.Size = new System.Drawing.Size(164, 93);
+            this.subclassDSUC.TabIndex = 27;
+            // 
+            // showDiscriptionUC
+            // 
+            this.showDiscriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.showDiscriptionUC.BackColor = System.Drawing.Color.White;
+            this.showDiscriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.showDiscriptionUC.Location = new System.Drawing.Point(0, 0);
+            this.showDiscriptionUC.Name = "showDiscriptionUC";
+            this.showDiscriptionUC.Size = new System.Drawing.Size(420, 20);
+            this.showDiscriptionUC.TabIndex = 0;
+            // 
+            // editDescriptionUC
+            // 
+            this.editDescriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.editDescriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editDescriptionUC.Location = new System.Drawing.Point(0, 0);
+            this.editDescriptionUC.Name = "editDescriptionUC";
+            this.editDescriptionUC.Size = new System.Drawing.Size(419, 20);
+            this.editDescriptionUC.TabIndex = 0;
+            // 
+            // editAddSubclassLBUC
+            // 
+            this.editAddSubclassLBUC.AutoScroll = true;
+            this.editAddSubclassLBUC.AutoSize = true;
+            this.editAddSubclassLBUC.BackColor = System.Drawing.Color.LightGreen;
+            this.editAddSubclassLBUC.Location = new System.Drawing.Point(188, 23);
+            this.editAddSubclassLBUC.Margin = new System.Windows.Forms.Padding(0);
+            this.editAddSubclassLBUC.MaximumSize = new System.Drawing.Size(200, 155);
+            this.editAddSubclassLBUC.Name = "editAddSubclassLBUC";
+            this.editAddSubclassLBUC.Size = new System.Drawing.Size(200, 84);
+            this.editAddSubclassLBUC.TabIndex = 28;
             // 
             // MainForm
             // 
@@ -1802,7 +1728,6 @@
             this.panel37.ResumeLayout(false);
             this.panel37.PerformLayout();
             this.panel14.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
             this.editDishTP.ResumeLayout(false);
             this.editDishTP.PerformLayout();
             this.panel15.ResumeLayout(false);
@@ -1862,7 +1787,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.ComboBox classDSCB;
         private System.Windows.Forms.Button startSearchBtn;
-        private System.Windows.Forms.Button addDishBtn;
+        private System.Windows.Forms.Button showRecommendsBtn;
         private System.Windows.Forms.TabControl mainTC;
         private System.Windows.Forms.TabPage dishesTP;
         private System.Windows.Forms.FlowLayoutPanel ItemsFLP;
@@ -1891,12 +1816,6 @@
         private System.Windows.Forms.Button removeBookmarkBtn;
         private System.Windows.Forms.Button editDishBtn;
         private System.Windows.Forms.Button removeDishBtn;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.TabPage editDishTP;
         private System.Windows.Forms.Panel panel15;
@@ -1937,6 +1856,8 @@
         private System.Windows.Forms.ComboBox editProductCB;
         private DishClassLBUC editAddSubclassLBUC;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button addDishBtn;
+        private System.Windows.Forms.Panel panel11;
     }
 }
 

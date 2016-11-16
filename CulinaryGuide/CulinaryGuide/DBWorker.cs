@@ -20,9 +20,12 @@ namespace CulinaryGuide
             connectStringBuilder.ConnectTimeout = 30;
             connectStringBuilder.IntegratedSecurity = true;
             connectStringBuilder.AttachDBFilename = @"|DataDirectory|CulinaryGuide.mdf";
-
+            
             connection = new SqlConnection();
             connection.ConnectionString = connectStringBuilder.ConnectionString;
+        }
+        ~DBWorker()
+        {
         }
         public bool Connect()
         {
@@ -249,7 +252,7 @@ namespace CulinaryGuide
         public List<DishClass> GetAllMinDishs()
         {
             List<DishClass> result = new List<DishClass>();
-
+ 
             string command = string.Format("SELECT * FROM [Dish]");
 
             bool allFine = false;
@@ -289,6 +292,49 @@ namespace CulinaryGuide
                 return null;
         }
 
+        public List<DishClass> GetRecommendMinDishsByUserId(int user_id)
+        {
+            List<DishClass> result = new List<DishClass>();
+
+            string command = string.Format("select d2.id as r_id, d2.description as r_d, d2.name as r_n from dish as d1, [dish] as d2 where d1.id in (select dish_id from bookmark where user_id={0}) and d2.id not in (select bookmark.dish_id from bookmark where user_id={0}) order by (select count(*) from Linker as l1, linker as l2 where l1.dish_id=D1.id and l2.dish_id=d2.id and l1.subclass_id=l2.subclass_id) DESC", user_id);
+
+            bool allFine = false;
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand(command, connection);
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    DishClass buf = new DishClass();
+
+                    buf.id = (int)dr[dr.GetOrdinal("r_id")];
+                    buf.description = (string)dr[dr.GetOrdinal("r_d")];
+                    buf.name = (string)dr[dr.GetOrdinal("r_n")];
+
+
+                    result.Add(buf);
+
+                }
+                allFine = true;
+                dr.Close();
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show("Ошибка подключения к базе!",e.Message);
+            }
+
+            foreach (DishClass item in result)
+            {
+                item.ingredients = GetIngredientsByDishId(item.id);
+                item.classes = GetDishCatigoriesByDishId(item.id);
+            }
+
+            if (allFine)
+                return result;
+            else
+                return null;
+        }
         public List<IngredientClass> GetIngredientsByDishId(int id)
         {
             List<IngredientClass> result = new List<IngredientClass>();

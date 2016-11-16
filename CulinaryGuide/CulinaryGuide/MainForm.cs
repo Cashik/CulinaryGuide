@@ -32,6 +32,7 @@ namespace CulinaryGuide
         {
             InitializeComponent();
             OpenHelpPage();
+            
             if (!db.Connect())
             {
                 MessageBox.Show("Нет соединения с базой данных!");
@@ -62,11 +63,15 @@ namespace CulinaryGuide
                 userNameLbl.Text = "Гость";
                 logoutBtn.Visible = false;
                 loginBtn.Visible = true;
-                bookmarkBtn.Visible = false;
+                showRecommendsBtn.Visible = false;
+                addBookmarkBtn.Visible = false;
                 addDishBtn.Visible = false;
+                bookmarkBtn.Visible = false;
+                
             }
             else
             {
+                showRecommendsBtn.Visible = true;
                 userNameLbl.Text = user.name;
                 logoutBtn.Visible = true;
                 loginBtn.Visible = false;
@@ -453,7 +458,8 @@ namespace CulinaryGuide
                 {
                     MemoryStream ms = new MemoryStream(dish.image);
                     editResultPhotoPB.Image = Image.FromStream(ms);
-                    ms.Close();
+                    //editResultPhotoPB.Image.Dispose();
+                    //ms.Close();
                 }
                   
                 editDescriptionUC.setText(dish.description);
@@ -676,6 +682,25 @@ namespace CulinaryGuide
         }
 
         private void fastSearchTP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void showRecommendsBtn_Click(object sender, EventArgs e)
+        {
+            List<DishClass> result = new List<DishClass>();
+            result = db.GetRecommendMinDishsByUserId(user.id);
+
+            FillPanel(result);
+            OpenAllDishes();
+        }
+
+        private void showDishImgPB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editResultPhotoPB_Click(object sender, EventArgs e)
         {
 
         }
