@@ -31,7 +31,7 @@ namespace CulinaryGuide
         public MainForm()
         {
             InitializeComponent();
-            OpenHelpPage();
+            
             
             if (!db.Connect())
             {
@@ -43,8 +43,11 @@ namespace CulinaryGuide
             // обновляем локальные переменные
             RefreshLocalData();
             RefreshMainWindowUIElements();
+            // открываем быстрый поиск и справку, чтобы встретить пользователя не пустой формой
+            OpenFastSearch();
+            OpenHelpPage();
         }
-
+       
         private void ReloadSettings()
         {
             // считываем с файла настройки
@@ -80,8 +83,10 @@ namespace CulinaryGuide
                 else addDishBtn.Visible = false;
             }
 
-            
 
+            // открываем быстрый поиск и справку, чтобы встретить пользователя не пустой формой
+            OpenFastSearch();
+            OpenHelpPage();
 
 
         }
