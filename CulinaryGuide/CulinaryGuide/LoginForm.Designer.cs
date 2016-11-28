@@ -113,7 +113,7 @@
             this.loginTxt.Name = "loginTxt";
             this.loginTxt.Size = new System.Drawing.Size(129, 20);
             this.loginTxt.TabIndex = 16;
-            this.loginTxt.Text = "user";
+            this.loginTxt.Text = "admin";
             // 
             // button1
             // 

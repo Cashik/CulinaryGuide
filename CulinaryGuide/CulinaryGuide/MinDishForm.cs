@@ -30,7 +30,7 @@ namespace CulinaryGuide
             {
                 ++ingCount;
                 //выходим, тк элементы все-равно не вместяться на панели
-                if (ingCount>=7 )
+                if (ingCount>3 )
                 {
                     moreThanSixIngLbl.Visible = true;
                     break;
@@ -52,6 +52,11 @@ namespace CulinaryGuide
         {
             mainForm.dish = dc;
             mainForm.OpenDish();
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

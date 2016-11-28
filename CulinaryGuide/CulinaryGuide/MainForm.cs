@@ -165,7 +165,7 @@ namespace CulinaryGuide
             {
                 MemoryStream ms = new MemoryStream(dish.image);
                 showDishImgPB.Image = Image.FromStream(ms);
-                ms.Close();
+                //ms.Close();
             }
             else
             {

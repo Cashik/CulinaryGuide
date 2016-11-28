@@ -132,25 +132,25 @@
             this.button21 = new System.Windows.Forms.Button();
             this.saveDishBtn = new System.Windows.Forms.Button();
             this.helpTP = new System.Windows.Forms.TabPage();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.subclassDSUC = new CulinaryGuide.DishClassLBUC();
             this.showDiscriptionUC = new CulinaryGuide.RTBUC();
             this.editDescriptionUC = new CulinaryGuide.RTBUC();
             this.editAddSubclassLBUC = new CulinaryGuide.DishClassLBUC();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.searchTC.SuspendLayout();
@@ -809,10 +809,10 @@
             this.mainTC.Controls.Add(this.dishTP);
             this.mainTC.Controls.Add(this.editDishTP);
             this.mainTC.Controls.Add(this.helpTP);
-            this.mainTC.Location = new System.Drawing.Point(-4, -22);
+            this.mainTC.Location = new System.Drawing.Point(-4, -1);
             this.mainTC.Name = "mainTC";
             this.mainTC.SelectedIndex = 0;
-            this.mainTC.Size = new System.Drawing.Size(477, 469);
+            this.mainTC.Size = new System.Drawing.Size(477, 448);
             this.mainTC.TabIndex = 2;
             // 
             // dishesTP
@@ -821,7 +821,7 @@
             this.dishesTP.Location = new System.Drawing.Point(4, 22);
             this.dishesTP.Name = "dishesTP";
             this.dishesTP.Padding = new System.Windows.Forms.Padding(3);
-            this.dishesTP.Size = new System.Drawing.Size(469, 455);
+            this.dishesTP.Size = new System.Drawing.Size(469, 416);
             this.dishesTP.TabIndex = 0;
             this.dishesTP.Text = "Dish list";
             this.dishesTP.UseVisualStyleBackColor = true;
@@ -835,7 +835,7 @@
             this.ItemsFLP.Location = new System.Drawing.Point(9, 17);
             this.ItemsFLP.Margin = new System.Windows.Forms.Padding(10);
             this.ItemsFLP.Name = "ItemsFLP";
-            this.ItemsFLP.Size = new System.Drawing.Size(450, 428);
+            this.ItemsFLP.Size = new System.Drawing.Size(450, 401);
             this.ItemsFLP.TabIndex = 3;
             // 
             // dishTP
@@ -848,7 +848,7 @@
             this.dishTP.Location = new System.Drawing.Point(4, 22);
             this.dishTP.Name = "dishTP";
             this.dishTP.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.dishTP.Size = new System.Drawing.Size(469, 455);
+            this.dishTP.Size = new System.Drawing.Size(469, 416);
             this.dishTP.TabIndex = 1;
             this.dishTP.Text = "Dish detail";
             // 
@@ -1202,7 +1202,7 @@
             this.panel11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Location = new System.Drawing.Point(-195, 5527);
+            this.panel11.Location = new System.Drawing.Point(-229, 5642);
             this.panel11.MinimumSize = new System.Drawing.Size(2, 42);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(2, 42);
@@ -1225,7 +1225,7 @@
             this.editDishTP.Controls.Add(this.panel15);
             this.editDishTP.Location = new System.Drawing.Point(4, 22);
             this.editDishTP.Name = "editDishTP";
-            this.editDishTP.Size = new System.Drawing.Size(469, 455);
+            this.editDishTP.Size = new System.Drawing.Size(469, 416);
             this.editDishTP.TabIndex = 0;
             this.editDishTP.Text = "Edit dish";
             // 
@@ -1445,6 +1445,7 @@
             this.editProductCB.Location = new System.Drawing.Point(21, 31);
             this.editProductCB.Name = "editProductCB";
             this.editProductCB.Size = new System.Drawing.Size(153, 21);
+            this.editProductCB.Sorted = true;
             this.editProductCB.TabIndex = 18;
             // 
             // label10
@@ -1536,6 +1537,7 @@
             this.editAddSubclassesBtn.Size = new System.Drawing.Size(21, 84);
             this.editAddSubclassesBtn.TabIndex = 24;
             this.editAddSubclassesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.editAddSubclassesBtn, "Добавить выбранные подклассы блюда");
             this.editAddSubclassesBtn.UseVisualStyleBackColor = false;
             this.editAddSubclassesBtn.Click += new System.EventHandler(this.addSubclassesBtn_Click);
             // 
@@ -1656,41 +1658,115 @@
             this.helpTP.Location = new System.Drawing.Point(4, 22);
             this.helpTP.Name = "helpTP";
             this.helpTP.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.helpTP.Size = new System.Drawing.Size(469, 443);
+            this.helpTP.Size = new System.Drawing.Size(469, 422);
             this.helpTP.TabIndex = 2;
             this.helpTP.Text = "Help";
             this.helpTP.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // label31
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label3.Location = new System.Drawing.Point(9, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(436, 163);
-            this.label3.TabIndex = 22;
-            this.label3.Text = resources.GetString("label3.Text");
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label31.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label31.Location = new System.Drawing.Point(6, 1823);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(439, 366);
+            this.label31.TabIndex = 35;
+            this.label31.Text = resources.GetString("label31.Text");
             // 
-            // label4
+            // label32
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label4.Location = new System.Drawing.Point(6, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(439, 25);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Пользователи и доступ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label32.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label32.Location = new System.Drawing.Point(6, 1788);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(439, 35);
+            this.label32.TabIndex = 34;
+            this.label32.Text = "Создание и редактирование рецепта";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // label5
+            // label29
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label5.Location = new System.Drawing.Point(6, 196);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(439, 153);
-            this.label5.TabIndex = 24;
-            this.label5.Text = resources.GetString("label5.Text");
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label29.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label29.Location = new System.Drawing.Point(6, 1655);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(439, 133);
+            this.label29.TabIndex = 33;
+            this.label29.Text = resources.GetString("label29.Text");
+            // 
+            // label30
+            // 
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label30.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label30.Location = new System.Drawing.Point(6, 1620);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(439, 35);
+            this.label30.TabIndex = 32;
+            this.label30.Text = "Просмотр рецепта";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // label27
+            // 
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label27.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label27.Location = new System.Drawing.Point(6, 1487);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(439, 133);
+            this.label27.TabIndex = 31;
+            this.label27.Text = resources.GetString("label27.Text");
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label28.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label28.Location = new System.Drawing.Point(6, 1452);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(439, 35);
+            this.label28.TabIndex = 30;
+            this.label28.Text = "Закладки";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label14.Location = new System.Drawing.Point(6, 1058);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(439, 394);
+            this.label14.TabIndex = 29;
+            this.label14.Text = resources.GetString("label14.Text");
+            // 
+            // label26
+            // 
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label26.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label26.Location = new System.Drawing.Point(6, 1023);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(439, 35);
+            this.label26.TabIndex = 28;
+            this.label26.Text = "Поиск";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label17.Location = new System.Drawing.Point(6, 712);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(439, 311);
+            this.label17.TabIndex = 27;
+            this.label17.Text = resources.GetString("label17.Text");
+            // 
+            // label25
+            // 
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label25.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label25.Location = new System.Drawing.Point(6, 687);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(439, 25);
+            this.label25.TabIndex = 26;
+            this.label25.Text = "Вход и регистрация";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -1704,6 +1780,37 @@
             this.label7.TabIndex = 25;
             this.label7.Text = "Демонстрация прав каждого пользователя";
             this.label7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label5.Location = new System.Drawing.Point(6, 196);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(439, 153);
+            this.label5.TabIndex = 24;
+            this.label5.Text = resources.GetString("label5.Text");
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label4.Location = new System.Drawing.Point(6, 171);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(439, 25);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Пользователи и доступ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label3.Location = new System.Drawing.Point(9, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(436, 163);
+            this.label3.TabIndex = 22;
+            this.label3.Text = resources.GetString("label3.Text");
             // 
             // subclassDSUC
             // 
@@ -1743,115 +1850,10 @@
             this.editAddSubclassLBUC.BackColor = System.Drawing.Color.LightGreen;
             this.editAddSubclassLBUC.Location = new System.Drawing.Point(188, 23);
             this.editAddSubclassLBUC.Margin = new System.Windows.Forms.Padding(0);
-            this.editAddSubclassLBUC.MaximumSize = new System.Drawing.Size(200, 155);
+            this.editAddSubclassLBUC.MaximumSize = new System.Drawing.Size(200, 84);
             this.editAddSubclassLBUC.Name = "editAddSubclassLBUC";
             this.editAddSubclassLBUC.Size = new System.Drawing.Size(200, 84);
             this.editAddSubclassLBUC.TabIndex = 28;
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label17.Location = new System.Drawing.Point(6, 712);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(439, 311);
-            this.label17.TabIndex = 27;
-            this.label17.Text = resources.GetString("label17.Text");
-            // 
-            // label25
-            // 
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label25.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label25.Location = new System.Drawing.Point(6, 687);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(439, 25);
-            this.label25.TabIndex = 26;
-            this.label25.Text = "Вход и регистрация";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label14.Location = new System.Drawing.Point(6, 1058);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(439, 394);
-            this.label14.TabIndex = 29;
-            this.label14.Text = resources.GetString("label14.Text");
-            // 
-            // label26
-            // 
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label26.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label26.Location = new System.Drawing.Point(6, 1023);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(439, 35);
-            this.label26.TabIndex = 28;
-            this.label26.Text = "Поиск";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // label27
-            // 
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label27.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label27.Location = new System.Drawing.Point(6, 1487);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(439, 133);
-            this.label27.TabIndex = 31;
-            this.label27.Text = resources.GetString("label27.Text");
-            // 
-            // label28
-            // 
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label28.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label28.Location = new System.Drawing.Point(6, 1452);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(439, 35);
-            this.label28.TabIndex = 30;
-            this.label28.Text = "Закладки";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // label29
-            // 
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label29.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label29.Location = new System.Drawing.Point(6, 1655);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(439, 133);
-            this.label29.TabIndex = 33;
-            this.label29.Text = resources.GetString("label29.Text");
-            // 
-            // label30
-            // 
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label30.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label30.Location = new System.Drawing.Point(6, 1620);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(439, 35);
-            this.label30.TabIndex = 32;
-            this.label30.Text = "Просмотр рецепта";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
-            // label31
-            // 
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label31.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label31.Location = new System.Drawing.Point(6, 1823);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(439, 366);
-            this.label31.TabIndex = 35;
-            this.label31.Text = resources.GetString("label31.Text");
-            // 
-            // label32
-            // 
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label32.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label32.Location = new System.Drawing.Point(6, 1788);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(439, 35);
-            this.label32.TabIndex = 34;
-            this.label32.Text = "Создание и редактирование рецепта";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // MainForm
             // 

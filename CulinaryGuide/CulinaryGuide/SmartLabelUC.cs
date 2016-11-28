@@ -54,7 +54,7 @@ namespace CulinaryGuide
         {
             if (canRemove)
             {
-                Parent.Controls.RemoveByKey(this.Name);
+                Parent.Controls.Remove(this);
 
             }
         }
@@ -63,8 +63,7 @@ namespace CulinaryGuide
         {
             if (canRemove)
             {
-                Parent.Controls.RemoveByKey(this.Name);
-
+                Parent.Controls.Remove(this);
             }
         }
     }
