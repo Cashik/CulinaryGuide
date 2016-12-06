@@ -50,12 +50,10 @@ namespace CulinaryGuide
         {
             return connection.State == System.Data.ConnectionState.Open;
         }
-
         public bool UserExist(string login)
         {
             bool result = false;
             string command = string.Format("SELECT * FROM [User] WHERE Login ='{0}'", login);
-
             try
             {
                 SqlCommand cmd = new SqlCommand(command, connection);
@@ -72,7 +70,6 @@ namespace CulinaryGuide
                 Console.WriteLine(ex.Message);
             }
 
-
             return result;
         }
 
@@ -84,9 +81,7 @@ namespace CulinaryGuide
         public UserClass GetUserByLoginPassword(string login,string password)
         {
             UserClass result = new UserClass();
-
             string command = string.Format("SELECT * FROM [User] WHERE Login ='{0}' and Password = '{1}'", login,password);
-
             bool allFine = false;
             try
             {
@@ -99,9 +94,7 @@ namespace CulinaryGuide
                     result.password = (string)dr[dr.GetOrdinal("Password")];
                     result.trusted = (((int)dr[dr.GetOrdinal("Trusted")]==1)? true : false);
                     result.name = (string)dr[dr.GetOrdinal("Name")];
-                    if (dr.IsDBNull(dr.GetOrdinal("Image"))) result.image = null;
-                    else result.image = (byte[])dr[dr.GetOrdinal("Image")];
-
+                    
                     allFine = true;
                 }
                 dr.Close();
@@ -110,8 +103,6 @@ namespace CulinaryGuide
             {
                 MessageBox.Show(ex.Data.ToString(),"Ошибка подключения к базе!");
             }
-
-
             if (allFine)
                 return result;
             else
@@ -120,7 +111,6 @@ namespace CulinaryGuide
         public DishClass GetDishById(int id)
         {
             DishClass result = new DishClass();
-
             string command = string.Format("SELECT * FROM [Dish] WHERE Id ='{0}'", id);
             bool allFine = false;
             try
@@ -144,72 +134,13 @@ namespace CulinaryGuide
             {
                 MessageBox.Show("Ошибка подключения к базе!");
             }
-
             result.ingredients = GetIngredientsByDishId(result.id);
             result.classes = GetDishCatigoriesByDishId(result.id);
-
-
-
             if (allFine)
                 return result;
             else
                 return null;
         }
-
-        /*private List<SubcategoryClass> GetDishCatigoriesByDishId(int id)
-        {
-            List<SubcategoryClass> b = new List<SubcategoryClass>();
-            List<int> subCategoriesId = new List<int>();
-            string command = string.Format("SELECT * FROM [Linker] where Dish_id = '{0}'",id);
-            bool allFine = false;
-            try
-            {
-
-                SqlCommand cmd = new SqlCommand(command, connection);
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    subCategoriesId.Add((int)dr[dr.GetOrdinal("Subclass_id")]);
-                }
-                allFine = true;
-                dr.Close();
-            }
-            catch (SqlException )
-            {
-                MessageBox.Show("Ошибка подключения к базе!");
-            }
-
-            foreach(int a in subCategoriesId)
-            {
-                try
-                {
-                    string command1 = string.Format("SELECT * FROM [Subclass] where Id = '{0}'", a);
-
-                    SqlCommand cmd = new SqlCommand(command1, connection);
-                    SqlDataReader dr = cmd.ExecuteReader();
-                    while (dr.Read())
-                    {
-                        SubcategoryClass buf = new SubcategoryClass();
-
-                        buf.id = (int)dr[dr.GetOrdinal("Id")];
-                        buf.name = (string)dr[dr.GetOrdinal("Name")];
-                        buf.parent_id = (int)dr[dr.GetOrdinal("Parent_id")];
-
-                        b.Add(buf);
-                    }
-                    allFine = true;
-                    dr.Close();
-                }
-                catch (SqlException )
-                {
-                    MessageBox.Show("Ошибка подключения к базе!");
-                }
-            }
-            if (allFine)
-                return b;
-            else
-                return null;
-        }*/
         private List<SubcategoryClass> GetDishCatigoriesByDishId(int id)
         {
             List<SubcategoryClass> b = new List<SubcategoryClass>();
