@@ -40,7 +40,6 @@
             this.wordDSTB = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.subclassDSUC = new CulinaryGuide.DishClassLBUC();
             this.label21 = new System.Windows.Forms.Label();
             this.addSubclassToDSBtn = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
@@ -83,7 +82,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.showDiscriptionUC = new CulinaryGuide.RTBUC();
             this.panel33 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
@@ -111,7 +109,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.editDescriptionUC = new CulinaryGuide.RTBUC();
             this.panel20 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -123,7 +120,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.editIngFLP = new System.Windows.Forms.FlowLayoutPanel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.editAddSubclassLBUC = new CulinaryGuide.DishClassLBUC();
             this.label11 = new System.Windows.Forms.Label();
             this.editSubclassFLP = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
@@ -151,6 +147,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label33 = new System.Windows.Forms.Label();
+            this.subclassDSUC = new CulinaryGuide.DishClassLBUC();
+            this.showDiscriptionUC = new CulinaryGuide.RTBUC();
+            this.editDescriptionUC = new CulinaryGuide.RTBUC();
+            this.editAddSubclassLBUC = new CulinaryGuide.DishClassLBUC();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.searchTC.SuspendLayout();
@@ -313,18 +314,6 @@
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(200, 218);
             this.panel31.TabIndex = 17;
-            // 
-            // subclassDSUC
-            // 
-            this.subclassDSUC.AutoScroll = true;
-            this.subclassDSUC.AutoSize = true;
-            this.subclassDSUC.BackColor = System.Drawing.Color.LightGreen;
-            this.subclassDSUC.Location = new System.Drawing.Point(8, 94);
-            this.subclassDSUC.Margin = new System.Windows.Forms.Padding(0);
-            this.subclassDSUC.MaximumSize = new System.Drawing.Size(164, 155);
-            this.subclassDSUC.Name = "subclassDSUC";
-            this.subclassDSUC.Size = new System.Drawing.Size(164, 93);
-            this.subclassDSUC.TabIndex = 27;
             // 
             // label21
             // 
@@ -821,33 +810,34 @@
             this.mainTC.Controls.Add(this.dishTP);
             this.mainTC.Controls.Add(this.editDishTP);
             this.mainTC.Controls.Add(this.helpTP);
-            this.mainTC.Location = new System.Drawing.Point(-4, -30);
+            this.mainTC.Location = new System.Drawing.Point(-4, -25);
             this.mainTC.Name = "mainTC";
             this.mainTC.SelectedIndex = 0;
-            this.mainTC.Size = new System.Drawing.Size(477, 477);
+            this.mainTC.Size = new System.Drawing.Size(477, 476);
             this.mainTC.TabIndex = 2;
             // 
             // dishesTP
             // 
+            this.dishesTP.AutoScroll = true;
             this.dishesTP.Controls.Add(this.ItemsFLP);
             this.dishesTP.Location = new System.Drawing.Point(4, 22);
             this.dishesTP.Name = "dishesTP";
             this.dishesTP.Padding = new System.Windows.Forms.Padding(3);
-            this.dishesTP.Size = new System.Drawing.Size(469, 451);
+            this.dishesTP.Size = new System.Drawing.Size(469, 450);
             this.dishesTP.TabIndex = 0;
             this.dishesTP.Text = "Dish list";
             this.dishesTP.UseVisualStyleBackColor = true;
             // 
             // ItemsFLP
             // 
-            this.ItemsFLP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.ItemsFLP.AutoScroll = true;
-            this.ItemsFLP.Location = new System.Drawing.Point(9, 17);
+            this.ItemsFLP.AutoSize = true;
+            this.ItemsFLP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ItemsFLP.Location = new System.Drawing.Point(3, 3);
             this.ItemsFLP.Margin = new System.Windows.Forms.Padding(10);
             this.ItemsFLP.Name = "ItemsFLP";
-            this.ItemsFLP.Size = new System.Drawing.Size(450, 430);
+            this.ItemsFLP.Padding = new System.Windows.Forms.Padding(20, 20, 0, 0);
+            this.ItemsFLP.Size = new System.Drawing.Size(463, 20);
             this.ItemsFLP.TabIndex = 3;
             // 
             // dishTP
@@ -860,7 +850,7 @@
             this.dishTP.Location = new System.Drawing.Point(4, 22);
             this.dishTP.Name = "dishTP";
             this.dishTP.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.dishTP.Size = new System.Drawing.Size(469, 422);
+            this.dishTP.Size = new System.Drawing.Size(469, 427);
             this.dishTP.TabIndex = 1;
             this.dishTP.Text = "Dish detail";
             // 
@@ -960,16 +950,6 @@
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(420, 20);
             this.panel32.TabIndex = 2;
-            // 
-            // showDiscriptionUC
-            // 
-            this.showDiscriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.showDiscriptionUC.BackColor = System.Drawing.Color.White;
-            this.showDiscriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.showDiscriptionUC.Location = new System.Drawing.Point(0, 0);
-            this.showDiscriptionUC.Name = "showDiscriptionUC";
-            this.showDiscriptionUC.Size = new System.Drawing.Size(420, 20);
-            this.showDiscriptionUC.TabIndex = 0;
             // 
             // panel33
             // 
@@ -1224,7 +1204,7 @@
             this.panel11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Location = new System.Drawing.Point(-246, 5713);
+            this.panel11.Location = new System.Drawing.Point(-263, 5786);
             this.panel11.MinimumSize = new System.Drawing.Size(2, 42);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(2, 42);
@@ -1247,7 +1227,7 @@
             this.editDishTP.Controls.Add(this.panel15);
             this.editDishTP.Location = new System.Drawing.Point(4, 22);
             this.editDishTP.Name = "editDishTP";
-            this.editDishTP.Size = new System.Drawing.Size(469, 422);
+            this.editDishTP.Size = new System.Drawing.Size(469, 427);
             this.editDishTP.TabIndex = 0;
             this.editDishTP.Text = "Edit dish";
             // 
@@ -1368,15 +1348,6 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(419, 20);
             this.panel28.TabIndex = 2;
-            // 
-            // editDescriptionUC
-            // 
-            this.editDescriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.editDescriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.editDescriptionUC.Location = new System.Drawing.Point(0, 0);
-            this.editDescriptionUC.Name = "editDescriptionUC";
-            this.editDescriptionUC.Size = new System.Drawing.Size(419, 20);
-            this.editDescriptionUC.TabIndex = 0;
             // 
             // panel20
             // 
@@ -1518,18 +1489,6 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(452, 150);
             this.panel16.TabIndex = 5;
-            // 
-            // editAddSubclassLBUC
-            // 
-            this.editAddSubclassLBUC.AutoScroll = true;
-            this.editAddSubclassLBUC.AutoSize = true;
-            this.editAddSubclassLBUC.BackColor = System.Drawing.Color.LightGreen;
-            this.editAddSubclassLBUC.Location = new System.Drawing.Point(188, 23);
-            this.editAddSubclassLBUC.Margin = new System.Windows.Forms.Padding(0);
-            this.editAddSubclassLBUC.MaximumSize = new System.Drawing.Size(200, 84);
-            this.editAddSubclassLBUC.Name = "editAddSubclassLBUC";
-            this.editAddSubclassLBUC.Size = new System.Drawing.Size(200, 84);
-            this.editAddSubclassLBUC.TabIndex = 28;
             // 
             // label11
             // 
@@ -1684,6 +1643,7 @@
             // helpTP
             // 
             this.helpTP.AutoScroll = true;
+            this.helpTP.Controls.Add(this.label33);
             this.helpTP.Controls.Add(this.label31);
             this.helpTP.Controls.Add(this.label32);
             this.helpTP.Controls.Add(this.label29);
@@ -1701,16 +1661,17 @@
             this.helpTP.Location = new System.Drawing.Point(4, 22);
             this.helpTP.Name = "helpTP";
             this.helpTP.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.helpTP.Size = new System.Drawing.Size(469, 422);
+            this.helpTP.Size = new System.Drawing.Size(469, 427);
             this.helpTP.TabIndex = 2;
             this.helpTP.Text = "Help";
             this.helpTP.UseVisualStyleBackColor = true;
+            this.helpTP.Click += new System.EventHandler(this.helpTP_Click);
             // 
             // label31
             // 
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label31.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label31.Location = new System.Drawing.Point(6, 1823);
+            this.label31.Location = new System.Drawing.Point(3, 1889);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(439, 366);
             this.label31.TabIndex = 35;
@@ -1720,7 +1681,7 @@
             // 
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label32.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label32.Location = new System.Drawing.Point(6, 1788);
+            this.label32.Location = new System.Drawing.Point(3, 1854);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(439, 35);
             this.label32.TabIndex = 34;
@@ -1731,7 +1692,7 @@
             // 
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label29.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label29.Location = new System.Drawing.Point(6, 1655);
+            this.label29.Location = new System.Drawing.Point(3, 1721);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(439, 133);
             this.label29.TabIndex = 33;
@@ -1741,7 +1702,7 @@
             // 
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label30.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label30.Location = new System.Drawing.Point(6, 1620);
+            this.label30.Location = new System.Drawing.Point(3, 1686);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(439, 35);
             this.label30.TabIndex = 32;
@@ -1752,7 +1713,7 @@
             // 
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label27.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label27.Location = new System.Drawing.Point(6, 1487);
+            this.label27.Location = new System.Drawing.Point(3, 1553);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(439, 133);
             this.label27.TabIndex = 31;
@@ -1762,7 +1723,7 @@
             // 
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label28.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label28.Location = new System.Drawing.Point(6, 1452);
+            this.label28.Location = new System.Drawing.Point(3, 1518);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(439, 35);
             this.label28.TabIndex = 30;
@@ -1773,7 +1734,7 @@
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label14.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label14.Location = new System.Drawing.Point(6, 1058);
+            this.label14.Location = new System.Drawing.Point(3, 1124);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(439, 394);
             this.label14.TabIndex = 29;
@@ -1783,7 +1744,7 @@
             // 
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label26.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label26.Location = new System.Drawing.Point(6, 1023);
+            this.label26.Location = new System.Drawing.Point(3, 1089);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(439, 35);
             this.label26.TabIndex = 28;
@@ -1794,7 +1755,7 @@
             // 
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label17.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label17.Location = new System.Drawing.Point(6, 712);
+            this.label17.Location = new System.Drawing.Point(3, 778);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(439, 311);
             this.label17.TabIndex = 27;
@@ -1804,7 +1765,7 @@
             // 
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label25.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label25.Location = new System.Drawing.Point(6, 687);
+            this.label25.Location = new System.Drawing.Point(3, 753);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(439, 25);
             this.label25.TabIndex = 26;
@@ -1817,7 +1778,7 @@
             this.label7.ForeColor = System.Drawing.Color.SeaGreen;
             this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
             this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label7.Location = new System.Drawing.Point(6, 349);
+            this.label7.Location = new System.Drawing.Point(3, 415);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(439, 315);
             this.label7.TabIndex = 25;
@@ -1828,7 +1789,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label5.Location = new System.Drawing.Point(6, 196);
+            this.label5.Location = new System.Drawing.Point(3, 262);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(439, 153);
             this.label5.TabIndex = 24;
@@ -1838,7 +1799,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label4.Location = new System.Drawing.Point(6, 171);
+            this.label4.Location = new System.Drawing.Point(3, 237);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(439, 25);
             this.label4.TabIndex = 23;
@@ -1849,11 +1810,65 @@
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label3.Location = new System.Drawing.Point(9, 8);
+            this.label3.Location = new System.Drawing.Point(6, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(436, 163);
             this.label3.TabIndex = 22;
             this.label3.Text = resources.GetString("label3.Text");
+            // 
+            // label33
+            // 
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label33.ForeColor = System.Drawing.Color.SeaGreen;
+            this.label33.Location = new System.Drawing.Point(6, 27);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(439, 25);
+            this.label33.TabIndex = 36;
+            this.label33.Text = "Справка";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // subclassDSUC
+            // 
+            this.subclassDSUC.AutoScroll = true;
+            this.subclassDSUC.AutoSize = true;
+            this.subclassDSUC.BackColor = System.Drawing.Color.LightGreen;
+            this.subclassDSUC.Location = new System.Drawing.Point(8, 94);
+            this.subclassDSUC.Margin = new System.Windows.Forms.Padding(0);
+            this.subclassDSUC.MaximumSize = new System.Drawing.Size(164, 155);
+            this.subclassDSUC.Name = "subclassDSUC";
+            this.subclassDSUC.Size = new System.Drawing.Size(164, 93);
+            this.subclassDSUC.TabIndex = 27;
+            // 
+            // showDiscriptionUC
+            // 
+            this.showDiscriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.showDiscriptionUC.BackColor = System.Drawing.Color.White;
+            this.showDiscriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.showDiscriptionUC.Location = new System.Drawing.Point(0, 0);
+            this.showDiscriptionUC.Name = "showDiscriptionUC";
+            this.showDiscriptionUC.Size = new System.Drawing.Size(420, 20);
+            this.showDiscriptionUC.TabIndex = 0;
+            // 
+            // editDescriptionUC
+            // 
+            this.editDescriptionUC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.editDescriptionUC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editDescriptionUC.Location = new System.Drawing.Point(0, 0);
+            this.editDescriptionUC.Name = "editDescriptionUC";
+            this.editDescriptionUC.Size = new System.Drawing.Size(419, 20);
+            this.editDescriptionUC.TabIndex = 0;
+            // 
+            // editAddSubclassLBUC
+            // 
+            this.editAddSubclassLBUC.AutoScroll = true;
+            this.editAddSubclassLBUC.AutoSize = true;
+            this.editAddSubclassLBUC.BackColor = System.Drawing.Color.LightGreen;
+            this.editAddSubclassLBUC.Location = new System.Drawing.Point(188, 23);
+            this.editAddSubclassLBUC.Margin = new System.Windows.Forms.Padding(0);
+            this.editAddSubclassLBUC.MaximumSize = new System.Drawing.Size(200, 84);
+            this.editAddSubclassLBUC.Name = "editAddSubclassLBUC";
+            this.editAddSubclassLBUC.Size = new System.Drawing.Size(200, 84);
+            this.editAddSubclassLBUC.TabIndex = 28;
             // 
             // MainForm
             // 
@@ -1893,6 +1908,7 @@
             this.panel7.ResumeLayout(false);
             this.mainTC.ResumeLayout(false);
             this.dishesTP.ResumeLayout(false);
+            this.dishesTP.PerformLayout();
             this.dishTP.ResumeLayout(false);
             this.dishTP.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -2055,6 +2071,7 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label33;
     }
 }
 
